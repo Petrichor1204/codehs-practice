@@ -5,12 +5,12 @@ def encrypt_string(text):
             if c == "z":
                 encrypted.append("a")
             else:    
-                encrypted.append(chr(ord(c) + 1).lower())
+                encrypted.append(chr(ord(c) + 1))
         elif c.isupper():
             if c == "Z":
                 encrypted.append("A")
             else:    
-                encrypted.append(chr(ord(c) + 1).upper())
+                encrypted.append(chr(ord(c) + 1))
         else:
             encrypted.append(c)
                    
